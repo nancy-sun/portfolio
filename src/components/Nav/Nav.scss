@@ -1,0 +1,29 @@
+@use "../../styles/partials/_reset.scss" as *;
+@use "../../styles/partials/_typography.scss" as *;
+@use "../../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/_mixins.scss" as *;
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+
+    &__logo {
+        font-size: 3rem;
+        font-weight: 800;
+        background: $primary-gradient;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__list {
+        display: flex;
+        font-size: 2.5rem;
+        gap: 1rem;
+    }
+
+    &__item {
+        font-size: 0.7rem;
+    }
+}
