@@ -1,13 +1,12 @@
 import React from 'react';
+import HomeCanvas from '../../components/HomeCanvas/HomeCanvas';
 import "./Home.scss";
-import BoxCanvas from '../../components/BoxCanvas/BoxCanvas';
-
 
 function Home() {
     return (
         <main className="home">
             <h1 className="home__title">Hello I'm Nancy Sun</h1>
-            <BoxCanvas />
+            <HomeCanvas />
         </main>
     )
 }
