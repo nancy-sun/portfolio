@@ -5,7 +5,6 @@ import "./Home.scss";
 function Home() {
     return (
         <main className="home">
-            <h1 className="home__title">Hello I'm Nancy Sun</h1>
             <HomeCanvas />
         </main>
     )
