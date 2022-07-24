@@ -18,9 +18,6 @@ function ProjectsCanvas() {
             />
             <ambientLight intensity={0.6} />
             <directionalLight position={[12, 15, 3]} />
-            <ContactShadows position={[0, -0.8, 0]} frames={1} scale={10} far={3} blur={1} opacity={0.75} />
-            <ContactShadows position={[0, -0.8, 0]} frames={1} scale={10} far={3} blur={3} color="black" />
-            {/* <Box /> */}
             {theme.darkTheme ?
                 (<Stars radius={120} depth={90} count={4000} factor={4} saturation={100} speed={0.7} />) :
                 (<Suspense fallback={null}>

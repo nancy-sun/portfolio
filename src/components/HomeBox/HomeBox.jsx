@@ -25,7 +25,6 @@ function Box() {
         <mesh
             rotation-y={4}
             scale={hovered ? 2.02 : 2} onPointerOver={() => hover(true)} onPointerOut={() => hover(false)}>
-            {/* <boxGeometry args={[1, 1, 1]} attach="geometry" /> */}
             <RoundedBox>
                 <meshStandardMaterial>
                     <RenderTexture attach="map" anisotropy={16} side={THREE.DoubleSide}>
