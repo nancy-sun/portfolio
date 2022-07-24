@@ -1,8 +1,12 @@
 import React from "react";
+import ProjectsCanvas from '../../components/ProjectsCanvas/ProjectsCanvas';
+import "./Projects.scss";
 
 function Projects() {
     return (
-        <div>Projects</div>
+        <main className="projects">
+            <ProjectsCanvas />
+        </main>
     )
 }
 

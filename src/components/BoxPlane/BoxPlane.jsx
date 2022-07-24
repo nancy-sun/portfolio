@@ -4,7 +4,7 @@ import { Text, PerspectiveCamera, RenderTexture, RoundedBox, Sphere, Lathe, Icos
 import * as THREE from 'three';
 import { toPage } from "../../utils/utils";
 
-function Exp({ position, page, rotateY, rotateX }) {
+function BoxPlane({ position, page, rotateY, rotateX }) {
 
     const [hovered, hover] = useState(false)
 
@@ -31,4 +31,4 @@ function Exp({ position, page, rotateY, rotateX }) {
     )
 }
 
-export default Exp
+export default BoxPlane;

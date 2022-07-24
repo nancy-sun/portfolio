@@ -1,9 +1,13 @@
-import React from 'react';
+import React from "react";
+import AboutCanvas from '../../components/AboutCanvas/AboutCanvas';
+import "./About.scss";
 
 function About() {
     return (
-        <div>About</div>
+        <main className="about">
+            <AboutCanvas />
+        </main>
     )
 }
 
-export default About
+export default About;

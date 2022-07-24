@@ -10,3 +10,6 @@ This is my personal portfolio page.
 - Redux
 - MUI
 
+## Libraries & Resources  
+- react-three/drei
+- Feather Icon (figma)

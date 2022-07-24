@@ -1,12 +1,11 @@
 import React, { Suspense } from 'react';
-import HomeBox from '../HomeBox/HomeBox';
 import { Canvas } from "@react-three/fiber";
-import "./HomeCanvas.scss";
 import { OrbitControls, ContactShadows, Cloud, Sky, Stars } from "@react-three/drei";
 import { useSelector } from "react-redux";
+import "./ProjectsCanvas.scss";
 
 
-function HomeCanvas() {
+function ProjectsCanvas() {
     const theme = useSelector((state) => state.theme);
 
 
@@ -21,7 +20,7 @@ function HomeCanvas() {
             <directionalLight position={[12, 15, 3]} />
             <ContactShadows position={[0, -0.8, 0]} frames={1} scale={10} far={3} blur={1} opacity={0.75} />
             <ContactShadows position={[0, -0.8, 0]} frames={1} scale={10} far={3} blur={3} color="black" />
-            <HomeBox />
+            {/* <Box /> */}
             {theme.darkTheme ?
                 (<Stars radius={120} depth={90} count={4000} factor={4} saturation={100} speed={0.7} />) :
                 (<Suspense fallback={null}>
@@ -36,4 +35,4 @@ function HomeCanvas() {
     )
 }
 
-export default HomeCanvas;
+export default ProjectsCanvas;

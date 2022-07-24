@@ -5,8 +5,7 @@ import * as THREE from 'three';
 // import one from "../../assets/textures/one.jpg"
 // import two from "../../assets/textures/two.jpg"
 // import three from "../../assets/textures/three.jpg"
-import { toPage } from "../../utils/utils";
-import Exp from "../Exp/Exp";
+import BoxPlane from "../BoxPlane/BoxPlane";
 
 function Box() {
 
@@ -35,11 +34,11 @@ function Box() {
                         <Text fontSize={0.4} color="#555"></Text>
                     </RenderTexture>
                 </meshStandardMaterial>
-                <Exp position={[0.501, 0, 0]} page={"skills"} rotateY={true} />
-                <Exp position={[0, 0, 0.501]} page={"contact"} />
-                <Exp position={[0, 0, -0.501]} page={"projects"} />
-                <Exp position={[-0.501, 0, 0]} page={"~"} rotateY={true} />
-                <Exp position={[0, 0.501, 0]} page={"about"} rotateX={true} />
+                <BoxPlane position={[0.501, 0, 0]} page={"skills"} rotateY={true} />
+                <BoxPlane position={[0, 0, 0.501]} page={"contact"} />
+                <BoxPlane position={[0, 0, -0.501]} page={"projects"} />
+                <BoxPlane position={[-0.501, 0, 0]} page={"~"} rotateY={true} />
+                <BoxPlane position={[0, 0.501, 0]} page={"about"} rotateX={true} />
             </RoundedBox>
         </mesh>
     )

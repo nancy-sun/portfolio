@@ -1,9 +1,12 @@
 import React from "react";
-import "./Contact.scss"
+import ContactCanvas from '../../components/ContactCanvas/ContactCanvas';
+import "./Contact.scss";
 
 function Contact() {
     return (
-        <div>Contact</div>
+        <main className="contact">
+            <ContactCanvas />
+        </main>
     )
 }
 
