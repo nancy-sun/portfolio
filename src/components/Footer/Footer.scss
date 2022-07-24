@@ -10,12 +10,15 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    color: inherit;
     font-size: 0.6rem;
 
     @include tablet {
         font-size: 0.8rem;
         gap: 0.6rem;
+    }
+
+    &__text {
+        color: inherit;
     }
 
     &__logo {
@@ -25,6 +28,14 @@
         @include tablet {
             width: 1rem;
             height: 1rem;
+        }
+
+        &:hover {
+            filter: invert(65%) sepia(61%) saturate(6319%) hue-rotate(163deg) brightness(97%) contrast(101%);
+        }
+
+        &--dark {
+            filter: invert(80%);
         }
 
         &--github {
