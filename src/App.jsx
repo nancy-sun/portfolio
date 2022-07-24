@@ -7,19 +7,19 @@ import Home from "./pages/Home/Home";
 import Skills from "./pages/Skills/Skills";
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
-import { ThemeProvider, GlobalStyles } from "@mui/material";
+import { ThemeProvider, GlobalStyles, CssBaseline } from "@mui/material";
 import { lightTheme, darkTheme } from "./theme/theme";
-import { palette } from '@mui/system';
+import { useSelector } from "react-redux";
 import "./App.scss";
 
 function App() {
+
+  const theme = useSelector((state) => state.theme);
+
+
   return (
-    <ThemeProvider theme={darkTheme}>
-      <GlobalStyles
-        styles={{
-          body: { backgroundColor: `${darkTheme.palette.background.default}` },
-        }}
-      />
+    <ThemeProvider theme={theme.darkTheme ? darkTheme : lightTheme}>
+      <CssBaseline />
       <div className="app">
         <BrowserRouter>
           <Nav />

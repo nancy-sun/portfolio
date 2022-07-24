@@ -11,24 +11,46 @@
     background: none;
     position: absolute;
     z-index: 9;
-    width: 90vw;
+    width: 100%;
+
 
     &__logo {
-        font-size: 3rem;
         font-weight: 800;
         background: $primary-gradient;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-size: 2.55rem;
+
+        @include tablet {
+            font-size: 3rem;
+        }
     }
 
     &__list {
         display: flex;
-        font-size: 2.5rem;
-        gap: 1rem;
         align-items: center;
+        gap: 0.7rem;
+
+        @include tablet {
+            gap: 1rem;
+        }
     }
 
     &__item {
         font-size: 0.7rem;
+        color: inherit;
+
+        @include tablet {
+            font-size: 1rem;
+        }
     }
+}
+
+
+
+.MuiSwitch-thumb {
+    // color: #213975;
+    background: url("../../assets/sun.svg") no-repeat;
+    background-size: 70%;
+    background-position: center;
 }

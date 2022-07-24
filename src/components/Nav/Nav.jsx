@@ -1,11 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Switch, ThemeProvider } from "@mui/material";
+import { Switch, FormGroup, FormControlLabel } from "@mui/material";
+import { toggleTheme } from "../../reducers/themeSlice";
+import { useSelector, useDispatch } from "react-redux";
+
 import "./Nav.scss";
 
 function Nav() {
 
 
+    const theme = useSelector((state) => state.theme);
+    const dispatch = useDispatch();
 
 
     return (
@@ -16,7 +21,9 @@ function Nav() {
                 <NavLink to="/projects" className="nav__item">Projects</NavLink>
                 <NavLink to="/skills" className="nav__item">Skills</NavLink>
                 <NavLink to="/contact" className="nav__item">Contact</NavLink>
-                <button>theme</button>
+                <FormGroup>
+                    <FormControlLabel control={<Switch checked={theme.darkTheme} onChange={() => dispatch(toggleTheme())} />} />
+                </FormGroup>
             </div>
         </nav >
     )
