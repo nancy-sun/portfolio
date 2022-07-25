@@ -1,18 +1,23 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Canvas, useFrame, useLoader } from '@react-three/fiber'
-import { Text, PerspectiveCamera, RenderTexture, Icosahedron } from "@react-three/drei";
+import React from "react";
+import { useLoader } from '@react-three/fiber'
+import { Icosahedron } from "@react-three/drei";
 import * as THREE from 'three';
-
+import { useBox } from "@react-three/cannon";
+import { clickSkills } from "../../utils/utils";
 
 function SkillsIcosahedron(props) {
 
-    const texture = useLoader(THREE.TextureLoader, props.texture)
-
+    const texture = useLoader(THREE.TextureLoader, props.texture);
+    const [ref, api] = useBox(() => ({
+        mass: 12, position: [0, 2, 0], ...props
+    }));
 
     return (
-        <mesh rotation-y={1.7} {...props}>
+        <mesh rotation-y={-3} {...props}
+            ref={ref}
+            onClick={(e) => clickSkills(e, api)}>
             <Icosahedron>
-                <meshBasicMaterial attach="material" map={texture} />
+                <meshStandardMaterial attach="material" map={texture} />
             </Icosahedron>
         </mesh>
     )
