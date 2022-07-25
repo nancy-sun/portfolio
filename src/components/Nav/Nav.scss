@@ -43,6 +43,10 @@
         @include tablet {
             font-size: 1rem;
         }
+
+        &--active {
+            color: blue;
+        }
     }
 }
 
