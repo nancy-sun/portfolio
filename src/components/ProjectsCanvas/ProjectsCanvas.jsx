@@ -1,23 +1,64 @@
 import React, { Suspense } from 'react';
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, ContactShadows, Cloud, Sky, Stars } from "@react-three/drei";
+import { ScrollControls, Scroll, Cloud, Sky, Stars } from "@react-three/drei";
 import { useSelector } from "react-redux";
 import "./ProjectsCanvas.scss";
+import ProjectPlane from '../ProjectsPlane/ProjectsPlane';
 
 
 function ProjectsCanvas() {
     const theme = useSelector((state) => state.theme);
 
+    const projects = [
+        {
+            name: "LiteChat",
+            description: "",
+            img: "img",
+            github: "https://github.com/nancy-sun/litechat",
+            position: [0, 0, 0]
+        },
+        {
+            name: "Portfolio",
+            description: "",
+            img: "",
+            github: "https://github.com/nancy-sun/portfolio",
+            position: [0, -8, 0]
+        },
+        {
+            name: "Hackathon project",
+            description: "",
+            img: "",
+            github: "https://github.com/nancy-sun/unbounce-project-client",
+            position: [0, -16, 0]
+        },
+        {
+            name: "(WIP) Web App",
+            description: "",
+            img: "",
+            github: "",
+            position: [0, -23, 0]
+
+        },
+        {
+            name: "(WIP) react native app",
+            description: "",
+            img: "",
+            github: "",
+            position: [0, -31, 0]
+        },
+    ];
 
     return (
         <Canvas className="canvas" >
-            <OrbitControls
-                maxDistance={10} minDistance={1.4}
-                // autoRotateSpeed={-2} autoRotate
-                minPolarAngle={0} maxPolarAngle={Math.PI / 2.5}
-            />
-            <ambientLight intensity={0.6} />
-            <directionalLight position={[12, 15, 3]} />
+            <ambientLight intensity={theme.darkTheme ? 0.15 : 0.6} />
+            <directionalLight position={[50, 30, 0]} />
+            <ScrollControls damping={6} pages={5}>
+                <Scroll style={{ width: '100%' }}>
+                    {projects.map((project, i) => {
+                        return (<ProjectPlane key={i} project={project} />)
+                    })}
+                </Scroll>
+            </ScrollControls>
             {theme.darkTheme ?
                 (<Stars radius={120} depth={90} count={4000} factor={4} saturation={100} speed={0.7} />) :
                 (<Suspense fallback={null}>

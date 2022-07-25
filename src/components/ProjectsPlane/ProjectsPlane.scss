@@ -1,0 +1,12 @@
+@use "../../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/_mixins.scss" as *;
+
+.project {
+    &__name {
+        font-size: 1rem;
+
+        @include tablet {
+            font-size: 2rem;
+        }
+    }
+}

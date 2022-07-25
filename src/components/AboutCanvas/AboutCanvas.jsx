@@ -20,7 +20,7 @@ function AboutCanvas() {
             <directionalLight position={[12, 15, 3]} />
             <ContactShadows position={[0, -0.8, 0]} frames={1} scale={10} far={3} blur={1} opacity={0.75} />
             <ContactShadows position={[0, -0.8, 0]} frames={1} scale={10} far={3} blur={3} color="black" />
-            {/* <Box /> */}
+            {/* https://drei.pmnd.rs/?path=/story/abstractions-text3d--text-3-d-st */}
             {theme.darkTheme ?
                 (<Stars radius={120} depth={90} count={4000} factor={4} saturation={100} speed={0.7} />) :
                 (<Suspense fallback={null}>
