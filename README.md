@@ -11,6 +11,6 @@ This is my personal portfolio page.
 - MUI
 
 ## Libraries & Resources  
-- react-three/drei
+- [react-three/drei](https://github.com/pmndrs/drei)
 - [react-three/cannon](https://www.npmjs.com/package/@react-three/cannon)
 - Feather Icon (figma)
