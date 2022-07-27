@@ -1,25 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Canvas, useFrame, useLoader } from '@react-three/fiber'
-import { Text, PerspectiveCamera, RenderTexture, RoundedBox, Sphere, Lathe, Icosahedron } from "@react-three/drei";
+import React, { useState } from "react";
+import { Text, PerspectiveCamera, RenderTexture, RoundedBox } from "@react-three/drei";
 import * as THREE from 'three';
-// import one from "../../assets/textures/one.jpg"
-// import two from "../../assets/textures/two.jpg"
-// import three from "../../assets/textures/three.jpg"
 import BoxPlane from "../BoxPlane/BoxPlane";
 
 function Box() {
 
-    // const texture_1 = useLoader(THREE.TextureLoader, one)
-    // const texture_2 = useLoader(THREE.TextureLoader, two);
-    // const texture_3 = useLoader(THREE.TextureLoader, three);
-
-
-
-    // const textRef = useRef();
-    // useFrame((state) => (textRef.current.position.x = Math.sin(state.clock.elapsedTime) * 2))
-
     const [hovered, hover] = useState(false)
-
 
     return (
         <mesh

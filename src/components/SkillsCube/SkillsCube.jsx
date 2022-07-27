@@ -1,6 +1,5 @@
 import React from "react";
 import { useLoader } from '@react-three/fiber'
-import { Sphere, RenderTexture } from "@react-three/drei";
 import * as THREE from 'three';
 import { useBox } from "@react-three/cannon";
 import { clickSkills } from "../../utils/utils";

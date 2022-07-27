@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, ContactShadows, Cloud, Sky, Stars } from "@react-three/drei";
-import { Physics, usePlane, useBox } from "@react-three/cannon";
+import { OrbitControls, Cloud, Sky, Stars } from "@react-three/drei";
+import { Physics } from "@react-three/cannon";
 import { useSelector } from "react-redux";
 import SkillsSphere from "../SkillsSphere/SkillsSphere"
 import SkillsIcosahedron from "../SkillsIcosahedron/SkillsIcosahedron";
