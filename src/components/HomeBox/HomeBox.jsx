@@ -12,10 +12,10 @@ function Box() {
             rotation-y={4}
             scale={hovered ? 2.02 : 2} onPointerOver={() => hover(true)} onPointerOut={() => hover(false)}>
             <RoundedBox>
-                <meshStandardMaterial>
+                <meshStandardMaterial metalness={2}>
                     <RenderTexture attach="map" anisotropy={16} side={THREE.DoubleSide}>
                         <PerspectiveCamera makeDefault manual position={[0, 0, 2]} />
-                        <color attach="background" args={["#a2d2ff"]} />
+                        <color attach="background" args={["pink"]} />
                         <Text fontSize={0.4} color="#555"></Text>
                     </RenderTexture>
                 </meshStandardMaterial>

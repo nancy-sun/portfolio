@@ -3,7 +3,8 @@ import { Canvas } from "@react-three/fiber";
 import { ScrollControls, Scroll, Cloud, Sky, Stars } from "@react-three/drei";
 import { useSelector } from "react-redux";
 import "./ProjectsCanvas.scss";
-import ProjectPlane from '../ProjectsPlane/ProjectsPlane';
+import ProjectPlane from "../ProjectsPlane/ProjectsPlane";
+
 
 
 function ProjectsCanvas() {

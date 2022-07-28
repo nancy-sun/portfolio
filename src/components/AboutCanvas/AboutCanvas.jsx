@@ -1,26 +1,25 @@
 import React, { Suspense } from 'react';
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, ContactShadows, Cloud, Sky, Stars } from "@react-three/drei";
+import { Canvas, useThree } from "@react-three/fiber";
+import { OrbitControls, Cloud, Sky, Stars } from "@react-three/drei";
 import { useSelector } from "react-redux";
-import "./AboutCanvas.scss";
+import AboutTextGroup from '../AboutTextGroup/AboutTextGroup';
 
 
 function AboutCanvas() {
     const theme = useSelector((state) => state.theme);
 
-
     return (
-        <Canvas className="canvas" >
+        <Canvas className="canvas" camera={{ fov: 70, position: [-1, 0, 0] }}>
             <OrbitControls
-                maxDistance={10} minDistance={1.4}
-                // autoRotateSpeed={-2} autoRotate
-                minPolarAngle={0} maxPolarAngle={Math.PI / 2.5}
+                maxDistance={30}
+                minDistance={12}
+                minPolarAngle={Math.PI / 3} maxPolarAngle={Math.PI / 1.8}
+                minAzimuthAngle={-Math.PI / 11}
+                maxAzimuthAngle={Math.PI / 9}
             />
-            <ambientLight intensity={0.6} />
-            <directionalLight position={[12, 15, 3]} />
-            <ContactShadows position={[0, -0.8, 0]} frames={1} scale={10} far={3} blur={1} opacity={0.75} />
-            <ContactShadows position={[0, -0.8, 0]} frames={1} scale={10} far={3} blur={3} color="black" />
-            {/* https://drei.pmnd.rs/?path=/story/abstractions-text3d--text-3-d-st */}
+            <directionalLight position={[3, 10, 3]} />
+            <ambientLight intensity={theme.darkTheme ? 0.4 : 0.8} />
+            <AboutTextGroup />
             {theme.darkTheme ?
                 (<Stars radius={120} depth={90} count={4000} factor={4} saturation={100} speed={0.7} />) :
                 (<Suspense fallback={null}>
