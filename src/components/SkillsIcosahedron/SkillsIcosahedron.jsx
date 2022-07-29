@@ -17,7 +17,7 @@ function SkillsIcosahedron(props) {
             ref={ref}
             onClick={(e) => clickSkills(e, api)}>
             <Icosahedron>
-                <meshStandardMaterial attach="material" map={texture} />
+                <meshStandardMaterial attach="material" map={texture} metalness={0.7} />
             </Icosahedron>
         </mesh>
     )

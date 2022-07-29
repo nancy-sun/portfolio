@@ -22,7 +22,7 @@ function AboutText({ text, position }) {
     return (
         <mesh position={position}>
             <textGeometry args={[text, textConfig]} />
-            <meshStandardMaterial metalness={1.3} color="#ffcad4" wireframe={text === "&" ? true : false} />
+            <meshStandardMaterial metalness={1.3} roughness={0.55} color="#ffcad4" wireframe={text === "&" ? true : false} />
         </mesh>
     )
 }

@@ -19,7 +19,7 @@ function SkillsCube(props) {
             ref={ref}
             onClick={(e) => clickSkills(e, api)}>
             <boxBufferGeometry attach="geometry" />
-            <meshStandardMaterial map={texture} />
+            <meshStandardMaterial map={texture} metalness={0.7} />
         </mesh >
     )
 }

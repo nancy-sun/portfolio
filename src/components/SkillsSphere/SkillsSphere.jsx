@@ -20,7 +20,7 @@ function SkillsSphere(props) {
         <mesh rotation-y={-3} {...props} ref={ref}
             onClick={(e) => clickSkills(e, api)}>
             <Sphere>
-                <meshStandardMaterial map={texture} />
+                <meshStandardMaterial map={texture} metalness={0.7} />
             </Sphere>
         </mesh >
     )

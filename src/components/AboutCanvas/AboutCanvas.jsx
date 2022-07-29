@@ -18,7 +18,7 @@ function AboutCanvas() {
                 maxAzimuthAngle={Math.PI / 9}
             />
             <directionalLight position={[3, 10, 3]} />
-            <ambientLight intensity={theme.darkTheme ? 0.4 : 0.8} />
+            <ambientLight intensity={theme.darkTheme ? 0.6 : 0.8} />
             <AboutTextGroup />
             {theme.darkTheme ?
                 (<Stars radius={120} depth={90} count={4000} factor={4} saturation={100} speed={0.7} />) :
