@@ -14,9 +14,7 @@ function Box() {
             <RoundedBox>
                 <meshStandardMaterial metalness={2}>
                     <RenderTexture attach="map" anisotropy={16} side={THREE.DoubleSide}>
-                        <PerspectiveCamera makeDefault manual position={[0, 0, 2]} />
                         <color attach="background" args={["pink"]} />
-                        <Text fontSize={0.4} color="#555"></Text>
                     </RenderTexture>
                 </meshStandardMaterial>
                 <BoxPlane position={[0.501, 0, 0]} page={"skills"} rotateY={true} />

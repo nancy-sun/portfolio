@@ -2,11 +2,44 @@
 @use "../../styles/partials/_mixins.scss" as *;
 
 .project {
+
+    &__title {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    &__text {
+        width: 20rem;
+        left: -9.4rem;
+        top: 7rem;
+        user-select: none;
+
+
+        @include tablet {
+            top: 9rem;
+            width: 25rem;
+        }
+    }
+
+
     &__name {
         font-size: 1rem;
 
+
         @include tablet {
             font-size: 2rem;
+        }
+    }
+
+    &__github {
+        content: url("../../assets/github.svg");
+        width: 1rem;
+        height: 1rem;
+        filter: invert(70%) sepia(56%) saturate(189%) hue-rotate(299deg) brightness(93%) contrast(96%);
+
+        &:hover {
+            filter: invert(68%) sepia(13%) saturate(1460%) hue-rotate(196deg) brightness(90%) contrast(91%);
         }
     }
 }

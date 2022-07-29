@@ -31,14 +31,6 @@ const darkTheme = createTheme({
         text: {
             primary: "#fff",
         },
-    }, components: {
-        MuiSwitch: {
-            styleOverrides: {
-                switchBase: {
-                    color: "red"
-                }
-            }
-        },
     }
 });
 

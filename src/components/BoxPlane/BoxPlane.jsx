@@ -20,7 +20,7 @@ function BoxPlane({ position, page, rotateY, rotateX }) {
                         <PerspectiveCamera makeDefault manual aspect={1 / 1} position={[0, 0, 5]} />
                         <color attach="background" args={[]} />
                         <ambientLight intensity={0.5} />
-                        <Text fontSize={1} color={hovered ? "red" : "#555"} letterSpacing={0.17}>
+                        <Text fontSize={1} color={hovered ? "#909add" : "#555"} letterSpacing={0.17}>
                             {page}
                         </Text>
                     </RenderTexture>
