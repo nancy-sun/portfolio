@@ -1,6 +1,3 @@
-import liteChatImg from "../assets/projects/liteChat.png";
-import hackathonImg from "../assets/projects/industryHackathon.png"
-
 const projects = [
     {
         name: "LiteChat",

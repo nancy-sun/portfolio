@@ -12,7 +12,7 @@ function ProjectPlane({ project, img, imgB, position }) {
     useCursor(hovered);
     const frontRef = useRef()
     const backRef = useRef()
-    const { viewport } = useThree();
+    const { viewport, size } = useThree();
 
 
 
@@ -31,7 +31,7 @@ function ProjectPlane({ project, img, imgB, position }) {
     return (
         <mesh
             // scale={[viewport.width / 1.5, viewport.width / 2.3, 1]}
-            scale={viewport.width > 11 ? tabScale : mobileScale}
+            scale={size.width > 768 ? tabScale : mobileScale}
             onPointerOver={() => hover(true)} onPointerOut={() => hover(false)}
             position={position}>
             <Plane args={[1, 1, 32, 32]}>
@@ -50,7 +50,7 @@ function ProjectPlane({ project, img, imgB, position }) {
                     <h1 className="project__name">{project.name}</h1>
                     <a href={project.github} target="_blank" className="project__github"></a>
                 </div>
-                <p>{project.description}</p>
+                <p className="project__description">{project.description}</p>
             </Html>
             {/* <MeshDistortMaterial
                     map={texture}

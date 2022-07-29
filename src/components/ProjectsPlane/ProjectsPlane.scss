@@ -10,25 +10,23 @@
     }
 
     &__text {
-        width: 20rem;
-        left: -9.4rem;
-        top: 7rem;
+        width: 87vw;
+        left: -40vw;
+        top: 23vh;
         user-select: none;
 
-
         @include tablet {
-            top: 9rem;
-            width: 25rem;
+            width: 40vw;
+            top: 27vh;
+            left: -20vw;
         }
     }
-
 
     &__name {
         font-size: 1rem;
 
-
         @include tablet {
-            font-size: 2rem;
+            font-size: 3rem;
         }
     }
 
@@ -40,6 +38,19 @@
 
         &:hover {
             filter: invert(68%) sepia(13%) saturate(1460%) hue-rotate(196deg) brightness(90%) contrast(91%);
+        }
+
+        @include tablet {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    &__description {
+        font-size: 1rem;
+
+        @include tablet {
+            font-size: 1.5rem;
         }
     }
 }
