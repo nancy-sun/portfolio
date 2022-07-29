@@ -19,7 +19,7 @@ function ProjectsCanvas() {
                 maxPolarAngle={Math.PI / 2}
                 minPolarAngle={Math.PI / 2}
             />
-            <ambientLight intensity={theme.darkTheme ? 1 : 1.7} resize={2} />
+            <ambientLight intensity={theme.darkTheme ? 1.6 : 1.7} resize={2} />
             <ProjectsScrolls />
             {theme.darkTheme ?
                 (<Stars radius={120} depth={90} count={4000} factor={4} saturation={100} speed={0.7} />) :
