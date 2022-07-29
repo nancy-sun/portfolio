@@ -10,17 +10,15 @@ function HomeCanvas() {
     const theme = useSelector((state) => state.theme);
 
     return (
-        <Canvas className="canvas" >
+        <Canvas className="canvas">
             <OrbitControls
                 maxDistance={10} minDistance={1.4}
-                // autoRotateSpeed={-2} autoRotate
-                minPolarAngle={0} maxPolarAngle={Math.PI / 2.5}
+            // autoRotateSpeed={-2} autoRotate
+            // minPolarAngle={0} maxPolarAngle={Math.PI / 2.5}
             />
             <ambientLight intensity={theme.darkTheme ? 0.15 : 0.6} />
             {/* <directionalLight position={[50, 30, 3]} /> */}
             <spotLight position={[2, 3, 3]} />
-            <ContactShadows position={[0, -0.8, 0]} frames={1} scale={10} far={3} blur={1} opacity={0.75} />
-            <ContactShadows position={[0, -0.8, 0]} frames={1} scale={10} far={3} blur={3} color="black" />
             <HomeBox />
             {theme.darkTheme ?
                 (<Stars radius={120} depth={90} count={4000} factor={4} saturation={100} speed={0.7} />) :
