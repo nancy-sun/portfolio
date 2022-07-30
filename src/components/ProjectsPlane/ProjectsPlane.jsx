@@ -1,11 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { useLoader, useFrame, useThree } from "@react-three/fiber";
-import { Html, RenderTexture, MeshDistortMaterial, useCursor, Text, useTexture, Plane } from '@react-three/drei'
+import { Html, MeshDistortMaterial, useCursor, Plane } from '@react-three/drei'
 import * as THREE from 'three';
 import "./ProjectsPlane.scss";
-
-
-
 
 function ProjectPlane({ project, img, imgB, position }) {
     const [hovered, hover] = useState(false);
@@ -46,7 +43,7 @@ function ProjectPlane({ project, img, imgB, position }) {
             <Html className="project__text">
                 <div className="project__title">
                     <h1 className="project__name">{project.name}</h1>
-                    <a href={project.github} target="_blank" className="project__github"></a>
+                    <a href={project.github} target="_blank" rel="noreferrer" className="project__github"></a>
                 </div>
                 <p className="project__description">{project.description}</p>
                 <p className="project__tech">{project.tech}</p>

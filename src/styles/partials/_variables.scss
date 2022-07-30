@@ -5,3 +5,28 @@ $primary-color: #CDB4DB;
 
 $primary-light: #f5f1ed;
 $primary-gradient: linear-gradient(to right top, #ffcad4, #f6c8e4, #e2c9f3, #c5cdfe, #a2d2ff);
+
+
+@keyframes GradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
