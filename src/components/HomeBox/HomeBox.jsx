@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text, PerspectiveCamera, RenderTexture, RoundedBox } from "@react-three/drei";
+import { RenderTexture, RoundedBox } from "@react-three/drei";
 import * as THREE from 'three';
 import BoxPlane from "../BoxPlane/BoxPlane";
 

@@ -24,7 +24,7 @@ function ContactCube(props) {
             <meshStandardMaterial map={map} bumpMap={normalMap} metalness={2} roughness={0.8} position={props.position} />
             <Html>
                 <div className="contact__link-wrap">
-                    <a href={props.link} target="_blank" className="contact__link"></a>
+                    <a href={props.link} target="_blank" rel="noreferrer" className="contact__link"> </a>
                 </div>
             </Html>
         </mesh >

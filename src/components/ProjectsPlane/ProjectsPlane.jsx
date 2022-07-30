@@ -43,7 +43,7 @@ function ProjectPlane({ project, img, imgB, position }) {
             <Html className="project__text">
                 <div className="project__title">
                     <h1 className="project__name">{project.name}</h1>
-                    <a href={project.github} target="_blank" rel="noreferrer" className="project__github"></a>
+                    <a href={project.github} target="_blank" rel="noreferrer" className="project__github"> </a>
                 </div>
                 <p className="project__description">{project.description}</p>
                 <p className="project__tech">{project.tech}</p>

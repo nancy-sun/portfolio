@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import ProjectPlane from "../ProjectsPlane/ProjectsPlane";
 import liteChatImg from "../../assets/projects/liteChat.png";
 import liteChatImgB from "../../assets/projects/liteChatB.png";
@@ -7,7 +7,6 @@ import hackathonImgB from "../../assets/projects/industryHackathonB.png";
 import portfolioImg from "../../assets/projects/portfolio.png";
 import portfolioImgB from "../../assets/projects/portfolioB.png";
 import { useThree } from "@react-three/fiber";
-import * as THREE from "three";
 import { ScrollControls, Scroll } from "@react-three/drei";
 import projects from "../../data/projectsData.json";
 
