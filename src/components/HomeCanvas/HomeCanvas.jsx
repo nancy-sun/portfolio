@@ -14,7 +14,7 @@ function HomeCanvas() {
             <OrbitControls
                 maxDistance={10} minDistance={2}
                 autoRotateSpeed={-2} autoRotate
-                minPolarAngle={0} maxPolarAngle={Math.PI / 2.7}
+                minPolarAngle={0} maxPolarAngle={Math.PI / 3}
             />
             <ambientLight intensity={theme.darkTheme ? 0.15 : 0.5} />
             <directionalLight position={[0, 10, 10]} />

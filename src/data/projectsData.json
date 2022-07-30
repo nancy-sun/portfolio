@@ -1,0 +1,20 @@
+[
+    {
+        "name": "LiteChat",
+        "description": "Full-stack group chatroom with real time voice communication.",
+        "github": "https://github.com/nancy-sun/litechat",
+        "tech": "React, SASS, Bootstrap, Redux, Node, Express, MongoDB, Socket.io, webRTC"
+    },
+    {
+        "name": "Portfolio",
+        "description": "3D portfolio page.",
+        "github": "https://github.com/nancy-sun/portfolio",
+        "tech": "React, SASS, Three.js, Redux, MUI"
+    },
+    {
+        "name": "Hackathon project",
+        "description": "Industry hackathon project with UX team for Unbouce.",
+        "github": "https://github.com/nancy-sun/unbounce-project-client",
+        "tech": "React, SASS, Bootstrap"
+    }
+]

@@ -19,9 +19,9 @@ function ContactCanvas() {
             <OrbitControls
                 maxDistance={10} minDistance={1.4}
                 autoRotateSpeed={0.28} autoRotate
-                minPolarAngle={0} maxPolarAngle={Math.PI / 2.5}
+                minPolarAngle={0} maxPolarAngle={Math.PI / 2.9}
             />
-            <ambientLight intensity={theme.darkTheme ? 0.01 : 0.15} />
+            <ambientLight intensity={theme.darkTheme ? 0.01 : 0.2} />
             <pointLight position={[2, 0, 2]} intensity={1.3} />
             <ContactCube map={linkedinMap} normalMap={linkedinNormalMap} dist="2.5" speed="0.1" link="https://www.linkedin.com/in/-nancy-sun/" />
             <ContactCube map={githubMap} normalMap={githubNormalMap} dist="1.5" speed="0.2" link="https://github.com/nancy-sun/portfolio" />

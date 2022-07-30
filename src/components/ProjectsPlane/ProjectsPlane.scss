@@ -16,9 +16,14 @@
         user-select: none;
 
         @include tablet {
-            width: 40vw;
+            width: 60vw;
             top: 27vh;
-            left: -20vw;
+            left: -24vw;
+        }
+
+        @include desktop {
+            width: 80vw;
+            top: 31vh;
         }
     }
 
@@ -51,6 +56,16 @@
 
         @include tablet {
             font-size: 1.5rem;
+        }
+    }
+
+    &__tech {
+        padding-top: 0.5rem;
+        font-size: 0.8rem;
+        opacity: 0.8;
+
+        @include tablet {
+            font-size: 1rem;
         }
     }
 }

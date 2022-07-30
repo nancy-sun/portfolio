@@ -13,11 +13,12 @@ function ProjectPlane({ project, img, imgB, position }) {
     const frontRef = useRef()
     const backRef = useRef()
     const { viewport, size } = useThree();
-
-
-
     const textureB = useLoader(THREE.TextureLoader, imgB);
     const texture = useLoader(THREE.TextureLoader, img);
+
+    const mobileScale = [viewport.width / 1.2, viewport.width / 1.8, 1];
+    const tabScale = [viewport.width / 2.1, viewport.width / 3.25, 1];
+
     useFrame(() => {
         frontRef.current.distort = THREE.MathUtils.lerp(frontRef.current.distort, hovered ? 0.4 : 0, hovered ? 0.05 : 0.01)
     });
@@ -25,12 +26,9 @@ function ProjectPlane({ project, img, imgB, position }) {
     useFrame(() => {
         backRef.current.distort = THREE.MathUtils.lerp(backRef.current.distort, hovered ? 0.4 : 0, hovered ? 0.05 : 0.01)
     });
-    const mobileScale = [viewport.width / 1.2, viewport.width / 1.8, 1];
-    const tabScale = [viewport.width / 2.1, viewport.width / 3.3, 1];
 
     return (
         <mesh
-            // scale={[viewport.width / 1.5, viewport.width / 2.3, 1]}
             scale={size.width > 768 ? tabScale : mobileScale}
             onPointerOver={() => hover(true)} onPointerOut={() => hover(false)}
             position={position}>
@@ -51,10 +49,8 @@ function ProjectPlane({ project, img, imgB, position }) {
                     <a href={project.github} target="_blank" className="project__github"></a>
                 </div>
                 <p className="project__description">{project.description}</p>
+                <p className="project__tech">{project.tech}</p>
             </Html>
-            {/* <MeshDistortMaterial
-                    map={texture}
-                    attach="material-1" opacity={1} ref={ref} speed={2} /> */}
         </mesh>
     )
 };
