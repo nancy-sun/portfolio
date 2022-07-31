@@ -24,7 +24,7 @@ function SkillsCanvas() {
         <Canvas className="canvas">
             <OrbitControls
                 maxDistance={10} minDistance={1.4}
-                minPolarAngle={0} maxPolarAngle={Math.PI / 2.5} />
+                minPolarAngle={0} maxPolarAngle={Math.PI / 2.5} enablePan={false} />
             <ambientLight intensity={theme ? 0.15 : 0.6} />
             <directionalLight position={[50, 30, 0]} />
             <Physics>

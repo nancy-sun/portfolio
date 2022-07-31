@@ -15,6 +15,7 @@ function HomeCanvas() {
                 maxDistance={10} minDistance={2}
                 autoRotateSpeed={-1.7} autoRotate
                 minPolarAngle={0} maxPolarAngle={Math.PI / 3}
+                enablePan={false}
             />
             <ambientLight intensity={theme ? 0.15 : 0.5} />
             <directionalLight position={[0, 10, 10]} />

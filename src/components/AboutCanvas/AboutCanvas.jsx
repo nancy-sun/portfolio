@@ -16,6 +16,7 @@ function AboutCanvas() {
                 minPolarAngle={Math.PI / 3} maxPolarAngle={Math.PI / 1.8}
                 minAzimuthAngle={-Math.PI / 11}
                 maxAzimuthAngle={Math.PI / 9}
+                enablePan={false}
             />
             <directionalLight position={[3, 10, 3]} />
             <ambientLight intensity={theme ? 0.6 : 0.8} />

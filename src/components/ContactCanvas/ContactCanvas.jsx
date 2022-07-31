@@ -1,6 +1,5 @@
 import React from "react";
 import { Canvas } from "@react-three/fiber";
-import "./ContactCanvas.scss";
 import { OrbitControls } from "@react-three/drei";
 import { useSelector } from "react-redux";
 import ContactEarth from "../ContactEarth/ContactEarth";
@@ -21,6 +20,7 @@ function ContactCanvas() {
                 maxDistance={10} minDistance={1.4}
                 autoRotateSpeed={0.28} autoRotate
                 minPolarAngle={0} maxPolarAngle={Math.PI / 2.9}
+                enablePan={false}
             />
             <ambientLight intensity={theme ? 0.01 : 0.2} />
             <pointLight position={[2, 0, 2]} intensity={1.3} />
