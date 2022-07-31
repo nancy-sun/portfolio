@@ -3,4 +3,8 @@
     width: 100vw;
     display: block;
     box-sizing: border-box;
+
+    &__projects {
+        touch-action: pan-y;
+    }
 }

@@ -10,7 +10,7 @@ function ProjectsCanvas() {
     const theme = useSelector((state) => state.darkTheme);
 
     return (
-        <Canvas className="canvas">
+        <Canvas className="canvas canvas__projects">
             <OrbitControls
                 enableZoom={false}
                 maxPolarAngle={Math.PI / 2}
