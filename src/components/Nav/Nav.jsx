@@ -8,7 +8,7 @@ import "./Nav.scss";
 
 function Nav() {
 
-    const theme = useSelector((state) => state.theme);
+    const theme = useSelector((state) => state.darkTheme);
     const dispatch = useDispatch();
 
     return (
@@ -21,7 +21,7 @@ function Nav() {
                 <NavLink to="/skills" className="nav__item" style={({ isActive }) => isActive ? { color: "#eb9aa8", fontWeight: 800 } : {}}>Skills</NavLink>
                 <NavLink to="/contact" className="nav__item" style={({ isActive }) => isActive ? { color: "#eb9aa8", fontWeight: 800 } : {}}>Contact</NavLink>
                 <FormGroup className="nav__control">
-                    <FormControlLabel control={<Switch checked={theme.darkTheme} onChange={() => dispatch(toggleTheme())} />} />
+                    <FormControlLabel control={<Switch checked={theme} onChange={() => dispatch(toggleTheme())} />} />
                 </FormGroup>
             </div>
         </nav >

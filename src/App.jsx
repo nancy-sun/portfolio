@@ -15,7 +15,7 @@ import Loading from "./components/Loading/Loading";
 
 function App() {
 
-  const theme = useSelector((state) => state.theme);
+  const theme = useSelector((state) => state.darkTheme);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ function App() {
   }, [])
 
   return (
-    <ThemeProvider theme={theme.darkTheme ? darkTheme : lightTheme}>
+    <ThemeProvider theme={theme ? darkTheme : lightTheme}>
       <CssBaseline />
       {loading ? <Loading /> : (
         <div className="app">

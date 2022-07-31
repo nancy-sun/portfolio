@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import Background from "../Background/Background";
 
 function HomeCanvas() {
-    const theme = useSelector((state) => state.theme);
+    const theme = useSelector((state) => state.darkTheme);
 
     return (
         <Canvas className="canvas">
@@ -16,7 +16,7 @@ function HomeCanvas() {
                 autoRotateSpeed={-1.7} autoRotate
                 minPolarAngle={0} maxPolarAngle={Math.PI / 3}
             />
-            <ambientLight intensity={theme.darkTheme ? 0.15 : 0.5} />
+            <ambientLight intensity={theme ? 0.15 : 0.5} />
             <directionalLight position={[0, 10, 10]} />
             <spotLight position={[20, 3, 4]} />
             <HomeBox />

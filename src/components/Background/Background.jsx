@@ -7,7 +7,7 @@ function Background({ theme }) {
     return (
         <>
             {
-                theme.darkTheme ?
+                theme ?
                     (<Stars radius={120} depth={90} count={4000} factor={4} saturation={100} speed={0.7} />) :
                     (<Suspense fallback={null}>
                         <Cloud position={[-4, -2, -25]} speed={0.2} opacity={0.1} />

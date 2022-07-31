@@ -13,7 +13,7 @@ import Background from "../Background/Background";
 
 
 function ContactCanvas() {
-    const theme = useSelector((state) => state.theme);
+    const theme = useSelector((state) => state.darkTheme);
 
     return (
         <Canvas className="canvas" >
@@ -22,10 +22,10 @@ function ContactCanvas() {
                 autoRotateSpeed={0.28} autoRotate
                 minPolarAngle={0} maxPolarAngle={Math.PI / 2.9}
             />
-            <ambientLight intensity={theme.darkTheme ? 0.01 : 0.2} />
+            <ambientLight intensity={theme ? 0.01 : 0.2} />
             <pointLight position={[2, 0, 2]} intensity={1.3} />
             <ContactCube map={linkedinMap} normalMap={linkedinNormalMap} dist="2.5" speed="0.1" link="https://www.linkedin.com/in/-nancy-sun/" />
-            <ContactCube map={githubMap} normalMap={githubNormalMap} dist="1.5" speed="0.2" link="https://github.com/nancy-sun/portfolio" />
+            <ContactCube map={githubMap} normalMap={githubNormalMap} dist="1.5" speed="0.2" link="https://github.com/nancy-sun" />
             <ContactEarth />
             <Background theme={theme} />
         </Canvas>

@@ -6,7 +6,7 @@ import AboutTextGroup from "../AboutTextGroup/AboutTextGroup";
 import Background from "../Background/Background";
 
 function AboutCanvas() {
-    const theme = useSelector((state) => state.theme);
+    const theme = useSelector((state) => state.darkTheme);
 
     return (
         <Canvas className="canvas" camera={{ fov: 70, position: [-1, 0, 0] }}>
@@ -18,7 +18,7 @@ function AboutCanvas() {
                 maxAzimuthAngle={Math.PI / 9}
             />
             <directionalLight position={[3, 10, 3]} />
-            <ambientLight intensity={theme.darkTheme ? 0.6 : 0.8} />
+            <ambientLight intensity={theme ? 0.6 : 0.8} />
             <AboutTextGroup />
             <Background theme={theme} />
         </Canvas>
