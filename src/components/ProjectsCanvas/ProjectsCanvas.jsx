@@ -1,6 +1,6 @@
 import React from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, OrthographicCamera, PerspectiveCamera } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import { useSelector } from "react-redux";
 import ProjectsScrolls from '../ProjectsScrolls/ProjectsScrolls';
 import Background from "../Background/Background";
