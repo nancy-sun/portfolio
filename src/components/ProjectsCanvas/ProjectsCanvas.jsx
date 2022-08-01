@@ -4,18 +4,27 @@ import { OrbitControls } from "@react-three/drei";
 import { useSelector } from "react-redux";
 import ProjectsScrolls from '../ProjectsScrolls/ProjectsScrolls';
 import Background from "../Background/Background";
+import * as THREE from 'three';
+
 import "./ProjectsCanvas.scss";
+
 
 function ProjectsCanvas() {
     const theme = useSelector((state) => state.darkTheme);
 
+    const touches = {
+        ONE: THREE.TOUCH.PAN,
+        TWO: THREE.TOUCH.ROTATE,
+    }
+
     return (
-        <Canvas className="canvas canvas__projects">
+        <Canvas className="canvas">
             <OrbitControls
                 enableZoom={false}
                 maxPolarAngle={Math.PI / 2}
                 minPolarAngle={Math.PI / 2}
-                enablePan={false}
+                enablePan={true}
+                touches={touches}
             />
             <ambientLight intensity={theme ? 1.6 : 1.7} />
             <ProjectsScrolls />
