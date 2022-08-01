@@ -12,7 +12,7 @@ function ProjectsCanvas() {
     const theme = useSelector((state) => state.darkTheme);
 
     const touches = {
-        ONE: THREE.TOUCH.DOLLY_ROTATE,
+        ONE: THREE.TOUCH.ROTATE,
         TWO: THREE.TOUCH.PAN,
     }
 
