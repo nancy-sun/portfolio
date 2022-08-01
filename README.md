@@ -26,6 +26,10 @@ This is my personal portfolio project, experimenting Three.js.
 - Feather Icon (figma)
 - [icon scout](https://iconscout.com/)
 - [normalMap-Online](https://cpetry.github.io/NormalMap-Online/)
+
+## Prototype  
+![prototype](https://user-images.githubusercontent.com/99620863/182066192-f34bfe59-2af6-4da6-a19f-5eb950777977.svg)
+
   
 ## Author  
 Designed & Developed by [@Nancy Sun](https://github.com/nancy-sun)
