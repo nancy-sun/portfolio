@@ -1,6 +1,6 @@
 import React from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { useSelector } from "react-redux";
 import ProjectsScrolls from '../ProjectsScrolls/ProjectsScrolls';
 import Background from "../Background/Background";
@@ -13,8 +13,8 @@ function ProjectsCanvas() {
     const theme = useSelector((state) => state.darkTheme);
 
     const touches = {
-        ONE: THREE.TOUCH.PAN,
-        TWO: THREE.TOUCH.ROTATE,
+        ONE: THREE.TOUCH.DOLLY_PAN,
+        TWO: THREE.TOUCH.DOLLY_ROTATE,
     }
 
     return (
