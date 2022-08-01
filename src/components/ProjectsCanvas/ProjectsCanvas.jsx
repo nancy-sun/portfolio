@@ -13,7 +13,7 @@ function ProjectsCanvas() {
 
     const touches = {
         ONE: THREE.TOUCH.ROTATE,
-        TWO: THREE.TOUCH.PAN,
+        TWO: THREE.TOUCH.DOLLY_PAN,
     }
 
     return (
