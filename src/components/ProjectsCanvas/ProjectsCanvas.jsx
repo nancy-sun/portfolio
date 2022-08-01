@@ -24,7 +24,6 @@ function ProjectsCanvas() {
                 minPolarAngle={Math.PI / 2}
                 enablePan={true}
                 touches={touches}
-                screenSpacePanning={false}
                 panSpeed={2}
             />
             <ambientLight intensity={theme ? 1.6 : 1.7} />
