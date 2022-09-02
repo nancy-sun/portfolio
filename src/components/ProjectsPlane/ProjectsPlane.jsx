@@ -20,26 +20,40 @@ function ProjectPlane({ project, img, imgB, position }) {
         frontRef.current.distort = THREE.MathUtils.lerp(frontRef.current.distort, hovered ? 0.4 : 0, hovered ? 0.05 : 0.01)
     });
 
-    useFrame(() => {
-        backRef.current.distort = THREE.MathUtils.lerp(backRef.current.distort, hovered ? 0.4 : 0, hovered ? 0.05 : 0.01)
-    });
+    // useFrame(() => {
+    //     backRef.current.distort = THREE.MathUtils.lerp(backRef.current.distort, hovered ? 0.4 : 0, hovered ? 0.05 : 0.01)
+    // });
+
+    const [showFront, setShowFront] = useState(false);
+    const handleFlip = () => {
+        showFront ? setShowFront(false) : setShowFront(true);
+    }
 
     return (
         <mesh
             scale={size.width > 768 ? tabScale : mobileScale}
             onPointerOver={() => hover(true)} onPointerOut={() => hover(false)}
             position={position}>
-            <Plane args={[1, 1, 32, 32]}>
-                <MeshDistortMaterial metalness={1.18}
-                    map={texture}
-                    attach="material" opacity={1} ref={frontRef} speed={2} side={THREE.FrontSide}>
-                </MeshDistortMaterial>
-            </Plane>
-            <Plane args={[1, 1, 32, 32]}>
-                <MeshDistortMaterial map={textureB} metalness={1.18}
-                    attach="material" opacity={1} ref={backRef} speed={2} side={THREE.BackSide}>
-                </MeshDistortMaterial>
-            </Plane>
+            {showFront ?
+                <Plane args={[1, 1, 32, 32]} onClick={handleFlip}>
+                    <MeshDistortMaterial metalness={1.18}
+                        map={texture}
+                        attach="material" opacity={1}
+                        ref={frontRef}
+                        speed={2}
+                        side={THREE.DoubleSide}
+                    >
+                    </MeshDistortMaterial>
+                </Plane>
+                :
+                <Plane args={[1, 1, 32, 32]} onClick={handleFlip}>
+                    <MeshDistortMaterial map={textureB} metalness={1.18}
+                        attach="material" opacity={1}
+                        ref={frontRef}
+                        speed={2} side={THREE.DoubleSide}>
+                    </MeshDistortMaterial>
+                </Plane>
+            }
             <Html className="project__text">
                 <div className="project__title">
                     <h1 className="project__name">{project.name}</h1>

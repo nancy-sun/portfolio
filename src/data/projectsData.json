@@ -1,20 +1,32 @@
 [
     {
         "name": "LiteChat",
-        "description": "Full-stack group chatroom with real time voice communication.",
+        "description": "Fullstack CRUD project with responsive design. Providing quick group chats with real time voice communication in a browser chatroom.",
         "github": "https://github.com/nancy-sun/litechat",
-        "tech": "React, SASS, Bootstrap, Redux, Node, Express, MongoDB, Socket.io, webRTC"
+        "tech": "React, CSS(Sass), Bootstrap, Redux, Node.js, Express, MongoDB, Socket.io, webRTC, Figma"
+    },
+    {
+        "name": "LCPLanner",
+        "description": "Fullstack CRUD mobile app to help users plan and recap Leetcode problems progresses.",
+        "github": "https://github.com/nancy-sun/lcplanner",
+        "tech": "React Native, Typescript, Expo, CSS(Sass), Node.js, GraphQL, JWT, MongoDB "
+    },
+    {
+        "name": "Pinguine",
+        "description": "Fullstack CRUD project with responsive design. Help users to easily save/bookmark locations and places in a map.",
+        "github": "https://github.com/nancy-sun/pinguine",
+        "tech": "React, CSS(Sass), Redux, MUI, Node.js, Express, MySQL, JWT"
     },
     {
         "name": "Portfolio",
-        "description": "3D portfolio page.",
+        "description": "Responsive portfolio page implementing 3D in the browser.",
         "github": "https://github.com/nancy-sun/portfolio",
-        "tech": "React, SASS, Three.js, Redux, MUI"
+        "tech": "React, CSS(Sass), Three.js, Redux, MUI"
     },
     {
-        "name": "Hackathon project",
-        "description": "Industry hackathon project with UX team for Unbouce.",
+        "name": "Hackathon project with Unbounce",
+        "description": "Winning team of 1 day Hackathon with the company Unbounce. Collaborate with UX designers to help Unbounce retain customer royalty.",
         "github": "https://github.com/nancy-sun/unbounce-project-client",
-        "tech": "React, SASS, Bootstrap"
+        "tech": "React, CSS(Sass), Bootstrap"
     }
 ]

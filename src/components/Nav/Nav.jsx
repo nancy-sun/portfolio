@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { Switch, FormGroup, FormControlLabel } from "@mui/material";
 import { toggleTheme } from "../../reducers/themeSlice";
 import { useSelector, useDispatch } from "react-redux";
-
 import "./Nav.scss";
 
 function Nav() {
