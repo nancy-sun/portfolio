@@ -9,7 +9,7 @@
         "name": "LCPLanner",
         "description": "Fullstack CRUD mobile app to help users plan and recap Leetcode problems progresses.",
         "github": "https://github.com/nancy-sun/lcplanner",
-        "tech": "React Native, Typescript, Expo, CSS(Sass), Node.js, GraphQL, JWT, MongoDB "
+        "tech": "React Native, Typescript, Expo, CSS(Sass), Node.js, GraphQL, JWT, MongoDB"
     },
     {
         "name": "Pinguine",
@@ -27,6 +27,6 @@
         "name": "Hackathon project with Unbounce",
         "description": "Winning team of 1 day Hackathon with the company Unbounce. Collaborate with UX designers to help Unbounce retain customer royalty.",
         "github": "https://github.com/nancy-sun/unbounce-project-client",
-        "tech": "React, CSS(Sass), Bootstrap"
+        "tech": "React, CSS(Sass), Bootstrap, Figma"
     }
 ]
