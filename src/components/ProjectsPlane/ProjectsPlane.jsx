@@ -32,7 +32,7 @@ function ProjectPlane({ project, img, imgB, position }) {
             {showFront ?
                 <Plane args={[1, 1, 32, 32]} onClick={handleFlip}>
                     <MeshDistortMaterial metalness={1.18}
-                        map={texture}
+                        map={textureB}
                         attach="material" opacity={1}
                         ref={frontRef}
                         speed={2}
@@ -42,7 +42,7 @@ function ProjectPlane({ project, img, imgB, position }) {
                 </Plane>
                 :
                 <Plane args={[1, 1, 32, 32]} onClick={handleFlip}>
-                    <MeshDistortMaterial map={textureB} metalness={1.18}
+                    <MeshDistortMaterial map={texture} metalness={1.18}
                         attach="material" opacity={1}
                         ref={frontRef}
                         speed={2} side={THREE.DoubleSide}>

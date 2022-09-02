@@ -47,7 +47,7 @@ function SkillsCanvas() {
             </Physics>
             <Background theme={theme} />
         </Canvas>
-    )
-}
+    );
+};
 
 export default SkillsCanvas;
