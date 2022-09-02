@@ -8,21 +8,16 @@ function ProjectPlane({ project, img, imgB, position }) {
     const [hovered, hover] = useState(false);
     useCursor(hovered);
     const frontRef = useRef()
-    const backRef = useRef()
     const { viewport, size } = useThree();
     const textureB = useLoader(THREE.TextureLoader, imgB);
     const texture = useLoader(THREE.TextureLoader, img);
 
-    const mobileScale = [viewport.width / 1.2, viewport.width / 1.8, 1];
-    const tabScale = [viewport.width / 2.1, viewport.width / 3.25, 1];
+    const mobileScale = [3.4, 2.2, 1];
+    const tabScale = [6, 4, 1];
 
     useFrame(() => {
         frontRef.current.distort = THREE.MathUtils.lerp(frontRef.current.distort, hovered ? 0.4 : 0, hovered ? 0.05 : 0.01)
     });
-
-    // useFrame(() => {
-    //     backRef.current.distort = THREE.MathUtils.lerp(backRef.current.distort, hovered ? 0.4 : 0, hovered ? 0.05 : 0.01)
-    // });
 
     const [showFront, setShowFront] = useState(false);
     const handleFlip = () => {

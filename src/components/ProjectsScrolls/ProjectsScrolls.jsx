@@ -17,8 +17,8 @@ function ProjectsScrolls() {
         <ScrollControls damping={6} pages={projects.length}>
             <Scroll>
                 <ProjectPlane project={projects[0]} img={liteChatImg} imgB={liteChatImgB} position={[0, viewport.height / 8, 0]} />
-                <ProjectPlane project={projects[1]} img={portfolioImg} imgB={portfolioImgB} position={[0, -viewport.height / 1.1, 0]} />
-                <ProjectPlane project={projects[2]} img={hackathonImg} imgB={hackathonImgB} position={[0, -viewport.height / 0.53, 0]} />
+                <ProjectPlane project={projects[3]} img={portfolioImg} imgB={portfolioImgB} position={[0, -viewport.height / 1.1, 0]} />
+                <ProjectPlane project={projects[4]} img={hackathonImg} imgB={hackathonImgB} position={[0, -viewport.height / 0.53, 0]} />
             </Scroll>
         </ScrollControls>
     )
