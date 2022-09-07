@@ -1,7 +1,7 @@
 [
     {
         "name": "LiteChat",
-        "description": "Fullstack CRUD project with responsive design. Providing quick group chats with real time voice communication in a browser chatroom.",
+        "description": "Fullstack CRUD project with responsive design and REST API. Providing quick group chats with real time voice communication in a browser chatroom.",
         "github": "https://github.com/nancy-sun/litechat",
         "tech": "React, CSS(Sass), Bootstrap, Redux, Node.js, Express, MongoDB, Socket.io, webRTC, Figma"
     },
@@ -13,7 +13,7 @@
     },
     {
         "name": "Pinguine",
-        "description": "Fullstack CRUD project with responsive design. Help users to easily save/bookmark locations and places in a map.",
+        "description": "Fullstack CRUD project with responsive design and REST API. Help users to easily save/bookmark locations and places on a map.",
         "github": "https://github.com/nancy-sun/pinguine",
         "tech": "React, CSS(Sass), Redux, MUI, Node.js, Express, MySQL, JWT"
     },
