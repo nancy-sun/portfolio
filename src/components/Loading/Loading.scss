@@ -10,8 +10,7 @@
     align-items: center;
     justify-content: center;
     background-color: #ecf6ff;
-
-    background: linear-gradient(45deg, #FFCAD4, #A2D2FF);
+    background: $secondary-gradient;
     background-size: 400% 400%;
     animation: GradientBackground 2.5s linear infinite;
 
