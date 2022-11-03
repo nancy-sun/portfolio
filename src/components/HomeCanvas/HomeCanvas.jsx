@@ -1,10 +1,10 @@
 import React from "react";
 import HomeBox from '../HomeBox/HomeBox';
 import { Canvas } from "@react-three/fiber";
-import "./HomeCanvas.scss";
 import { OrbitControls } from "@react-three/drei";
 import { useSelector } from "react-redux";
 import Background from "../Background/Background";
+import "./HomeCanvas.scss";
 
 function HomeCanvas() {
     const theme = useSelector((state) => state.darkTheme);
@@ -23,7 +23,7 @@ function HomeCanvas() {
             <HomeBox />
             <Background theme={theme} />
         </Canvas>
-    )
-}
+    );
+};
 
 export default HomeCanvas;

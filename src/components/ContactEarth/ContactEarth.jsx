@@ -1,16 +1,14 @@
 import React, { useState } from "react";
-import { useLoader } from '@react-three/fiber'
+import { useLoader } from "@react-three/fiber"
 import { Sphere } from "@react-three/drei";
-import * as THREE from 'three';
+import * as THREE from "three";
 import earthMap from "../../assets/earthMap.jpeg";
 import earthNormal from "../../assets/earthNormal.jpeg";
 import earthSpec from "../../assets/earthSpec.jpeg";
 
-
 function ContactEarth() {
-
     const [map, normalMap, specMap] = useLoader(THREE.TextureLoader, [earthMap, earthNormal, earthSpec]);
-    const [hovered, hover] = useState(false)
+    const [hovered, hover] = useState(false);
 
     return (
         <mesh scale={hovered ? 0.81 : 0.8} onPointerOver={() => hover(true)} onPointerOut={() => hover(false)}>
@@ -19,7 +17,7 @@ function ContactEarth() {
                 <meshStandardMaterial map={map} bumpMap={normalMap} metalness={0.2} roughness={0.8} />
             </Sphere>
         </mesh>
-    )
-}
+    );
+};
 
 export default ContactEarth;

@@ -6,7 +6,7 @@ function Loading() {
         <main className="loading">
             <h1 className="loading__logo">N</h1>
         </main>
-    )
-}
+    );
+};
 
 export default Loading;

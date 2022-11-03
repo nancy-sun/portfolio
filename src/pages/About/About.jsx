@@ -1,5 +1,5 @@
 import React from "react";
-import AboutCanvas from '../../components/AboutCanvas/AboutCanvas';
+import AboutCanvas from "../../components/AboutCanvas/AboutCanvas";
 import "./About.scss";
 
 function About() {
@@ -7,7 +7,7 @@ function About() {
         <main className="about">
             <AboutCanvas />
         </main>
-    )
-}
+    );
+};
 
 export default About;

@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Text, PerspectiveCamera, RenderTexture, Plane } from "@react-three/drei";
-import * as THREE from 'three';
+import * as THREE from "three";
 import { toPage } from "../../utils/utils";
 
 function BoxPlane({ position, page, rotateY, rotateX }) {
-
-    const [hovered, hover] = useState(false)
+    const [hovered, hover] = useState(false);
 
     return (
         <mesh onPointerOver={() => hover(true)} onPointerOut={() => hover(false)}
@@ -27,7 +26,7 @@ function BoxPlane({ position, page, rotateY, rotateX }) {
                 </meshStandardMaterial>
             </Plane>
         </mesh>
-    )
-}
+    );
+};
 
 export default BoxPlane;

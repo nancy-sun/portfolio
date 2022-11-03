@@ -37,7 +37,6 @@ const lightTheme = createTheme({
     }
 });
 
-
 const darkTheme = createTheme({
     palette: {
         mode: "dark",

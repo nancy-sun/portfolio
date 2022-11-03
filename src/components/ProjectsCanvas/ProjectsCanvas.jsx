@@ -1,7 +1,7 @@
 import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { useSelector } from "react-redux";
-import ProjectsScrolls from '../ProjectsScrolls/ProjectsScrolls';
+import ProjectsScrolls from "../ProjectsScrolls/ProjectsScrolls";
 import Background from "../Background/Background";
 import "./ProjectsCanvas.scss";
 
@@ -15,7 +15,7 @@ function ProjectsCanvas() {
             <ProjectsScrolls />
             <Background theme={theme} />
         </Canvas>
-    )
-}
+    );
+};
 
 export default ProjectsCanvas;

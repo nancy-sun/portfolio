@@ -1,9 +1,8 @@
 import React from "react";
-import { useLoader } from '@react-three/fiber'
-import * as THREE from 'three';
+import { useLoader } from "@react-three/fiber";
+import * as THREE from "three";
 import { useBox } from "@react-three/cannon";
 import { clickSkills } from "../../utils/utils";
-
 
 function SkillsCube(props) {
     const [ref, api] = useBox(() => ({
@@ -21,7 +20,7 @@ function SkillsCube(props) {
             <boxBufferGeometry attach="geometry" />
             <meshStandardMaterial map={texture} metalness={0.7} />
         </mesh >
-    )
-}
+    );
+};
 
 export default SkillsCube;

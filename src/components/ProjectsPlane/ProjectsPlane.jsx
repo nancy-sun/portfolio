@@ -1,28 +1,28 @@
 import React, { useRef, useState } from "react";
 import { useLoader, useFrame, useThree } from "@react-three/fiber";
-import { Html, MeshDistortMaterial, useCursor, Plane } from '@react-three/drei'
-import * as THREE from 'three';
+import { Html, MeshDistortMaterial, useCursor, Plane } from "@react-three/drei"
+import * as THREE from "three";
 import "./ProjectsPlane.scss";
 
 function ProjectPlane({ project, img, imgB, position }) {
     const [hovered, hover] = useState(false);
     useCursor(hovered);
     const frontRef = useRef()
-    const { viewport, size } = useThree();
+    const { size } = useThree();
     const textureB = useLoader(THREE.TextureLoader, imgB);
     const texture = useLoader(THREE.TextureLoader, img);
 
     const mobileScale = [3.4, 2.2, 1];
     const tabScale = [6, 4, 1];
 
-    useFrame(() => {
-        frontRef.current.distort = THREE.MathUtils.lerp(frontRef.current.distort, hovered ? 0.4 : 0, hovered ? 0.05 : 0.01)
-    });
-
     const [showFront, setShowFront] = useState(false);
     const handleFlip = () => {
         showFront ? setShowFront(false) : setShowFront(true);
-    }
+    };
+
+    useFrame(() => {
+        frontRef.current.distort = THREE.MathUtils.lerp(frontRef.current.distort, hovered ? 0.4 : 0, hovered ? 0.05 : 0.01)
+    });
 
     return (
         <mesh
@@ -58,7 +58,7 @@ function ProjectPlane({ project, img, imgB, position }) {
                 <p className="project__tech">{project.tech}</p>
             </Html>
         </mesh>
-    )
+    );
 };
 
 export default ProjectPlane;

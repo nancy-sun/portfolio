@@ -20,7 +20,7 @@ function AboutTextGroup() {
             <AboutText text={about3} position={[0, -1, 0]} />
             <AboutText text={about4} position={[-4, -2.5, 0]} />
         </group>
-    )
-}
+    );
+};
 
 export default AboutTextGroup;

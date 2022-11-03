@@ -5,8 +5,8 @@ import { Physics } from "@react-three/cannon";
 import { useSelector } from "react-redux";
 import SkillsSphere from "../SkillsSphere/SkillsSphere"
 import SkillsIcosahedron from "../SkillsIcosahedron/SkillsIcosahedron";
-import SkillsCube from '../SkillsCube/SkillsCube';
-import SkillsPlane from '../SkillsPlane/SkillsPlane';
+import SkillsCube from "../SkillsCube/SkillsCube";
+import SkillsPlane from "../SkillsPlane/SkillsPlane";
 import jsIcon from "../../assets/icons/javascript.png";
 import tsIcon from "../../assets/icons/typescript.png";
 import sassIcon from "../../assets/icons/sass.png";
@@ -17,8 +17,8 @@ import nodeIcon from "../../assets/icons/nodejs.png";
 import mongoDBIcon from "../../assets/icons/mongodb.png";
 import javaIcon from "../../assets/icons/java.png";
 import graphQLIcon from "../../assets/icons/graphql.png";
-import "./SkillsCanvas.scss";
 import Background from "../Background/Background";
+import "./SkillsCanvas.scss";
 
 function SkillsCanvas() {
     const theme = useSelector((state) => state.darkTheme);

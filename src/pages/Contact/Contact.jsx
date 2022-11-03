@@ -1,5 +1,5 @@
 import React from "react";
-import ContactCanvas from '../../components/ContactCanvas/ContactCanvas';
+import ContactCanvas from "../../components/ContactCanvas/ContactCanvas";
 import "./Contact.scss";
 
 function Contact() {
@@ -7,7 +7,7 @@ function Contact() {
         <main className="contact">
             <ContactCanvas />
         </main>
-    )
-}
+    );
+};
 
 export default Contact;

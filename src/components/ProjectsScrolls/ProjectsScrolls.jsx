@@ -24,7 +24,7 @@ function ProjectsScrolls() {
                 <ProjectPlane project={projects[4]} img={hackathonImg} imgB={hackathonImgB} position={[0, -viewport.height * 3 + 0.5, 0]} />
             </Scroll>
         </ScrollControls>
-    )
-}
+    );
+};
 
 export default ProjectsScrolls;

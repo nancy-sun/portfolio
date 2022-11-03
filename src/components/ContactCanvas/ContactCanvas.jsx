@@ -10,7 +10,6 @@ import githubNormalMap from "../../assets/githubNormal.png";
 import linkedinNormalMap from "../../assets/linkedinNormal.png";
 import Background from "../Background/Background";
 
-
 function ContactCanvas() {
     const theme = useSelector((state) => state.darkTheme);
 
@@ -29,7 +28,7 @@ function ContactCanvas() {
             <ContactEarth />
             <Background theme={theme} />
         </Canvas>
-    )
-}
+    );
+};
 
 export default ContactCanvas;

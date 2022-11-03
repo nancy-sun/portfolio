@@ -1,11 +1,10 @@
 import React, { useState } from "react";
+import * as THREE from "three";
 import { RenderTexture, RoundedBox } from "@react-three/drei";
-import * as THREE from 'three';
 import BoxPlane from "../BoxPlane/BoxPlane";
 
 function Box() {
-
-    const [hovered, hover] = useState(false)
+    const [hovered, hover] = useState(false);
 
     return (
         <mesh
@@ -24,7 +23,7 @@ function Box() {
                 <BoxPlane position={[0, 0.501, 0]} page={"about"} rotateX={true} />
             </RoundedBox>
         </mesh>
-    )
-}
+    );
+};
 
 export default Box;

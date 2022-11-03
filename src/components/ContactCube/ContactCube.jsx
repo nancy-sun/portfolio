@@ -1,10 +1,8 @@
 import React, { useRef } from "react";
-import { useLoader, useFrame } from '@react-three/fiber'
+import { useLoader, useFrame } from "@react-three/fiber"
 import { Html } from "@react-three/drei";
-import * as THREE from 'three';
+import * as THREE from "three";
 import "./ContactCube.scss";
-
-
 
 function ContactCube(props) {
     const ref = useRef();
@@ -28,7 +26,7 @@ function ContactCube(props) {
                 </div>
             </Html>
         </mesh >
-    )
-}
+    );
+};
 
 export default ContactCube;

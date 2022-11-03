@@ -6,7 +6,6 @@ import { useSelector, useDispatch } from "react-redux";
 import "./Nav.scss";
 
 function Nav() {
-
     const theme = useSelector((state) => state.darkTheme);
     const dispatch = useDispatch();
 
@@ -23,8 +22,8 @@ function Nav() {
                     <FormControlLabel control={<Switch checked={theme} onChange={() => dispatch(toggleTheme())} />} />
                 </FormGroup>
             </div>
-        </nav >
-    )
-}
+        </nav>
+    );
+};
 
 export default Nav;

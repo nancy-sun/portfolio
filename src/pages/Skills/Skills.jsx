@@ -1,5 +1,5 @@
 import React from "react";
-import SkillsCanvas from '../../components/SkillsCanvas/SkillsCanvas';
+import SkillsCanvas from "../../components/SkillsCanvas/SkillsCanvas";
 import "./Skills.scss";
 
 function Skills() {
@@ -7,7 +7,7 @@ function Skills() {
         <main className="skills">
             <SkillsCanvas />
         </main>
-    )
-}
+    );
+};
 
 export default Skills;

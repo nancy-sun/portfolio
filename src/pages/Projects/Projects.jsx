@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectsCanvas from '../../components/ProjectsCanvas/ProjectsCanvas';
+import ProjectsCanvas from "../../components/ProjectsCanvas/ProjectsCanvas";
 import "./Projects.scss";
 
 function Projects() {
@@ -7,7 +7,7 @@ function Projects() {
         <main className="projects">
             <ProjectsCanvas />
         </main>
-    )
-}
+    );
+};
 
 export default Projects;

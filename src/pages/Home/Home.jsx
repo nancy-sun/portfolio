@@ -1,5 +1,5 @@
-import React from 'react';
-import HomeCanvas from '../../components/HomeCanvas/HomeCanvas';
+import React from "react";
+import HomeCanvas from "../../components/HomeCanvas/HomeCanvas";
 import "./Home.scss";
 
 function Home() {
@@ -7,7 +7,7 @@ function Home() {
         <main className="home">
             <HomeCanvas />
         </main>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;
