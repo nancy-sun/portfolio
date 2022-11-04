@@ -1,0 +1,40 @@
+@use "../../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/_mixins.scss" as *;
+
+.projects {
+    &__list {
+        width: 80vw;
+        display: grid;
+        justify-content: center;
+        row-gap: 4rem;
+        grid-template-columns: repeat(1, 1fr);
+
+        @include tablet {
+            width: 83vw;
+            column-gap: 2.5rem;
+            row-gap: 2.5rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include desktop {
+            width: 85vw;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 4rem;
+            row-gap: 4rem;
+        }
+
+        &-wrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 70vh;
+            overflow: scroll;
+            margin-top: 2rem;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+}

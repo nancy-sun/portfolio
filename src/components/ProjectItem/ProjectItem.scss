@@ -1,0 +1,38 @@
+@use "../../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/_mixins.scss" as *;
+
+.project {
+
+    &__img {
+        background-color: white;
+        background-position: center;
+        background-size: cover;
+
+        &:before {
+            content: "";
+            display: block;
+            height: 0;
+            width: 0;
+            padding-bottom: calc(5/8 * 100%);
+        }
+
+        &:last-child {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+    &__name {
+        font-size: 0.8rem;
+    }
+
+    &__type {
+        font-size: 0.9rem;
+    }
+}

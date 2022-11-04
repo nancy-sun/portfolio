@@ -1,10 +1,9 @@
 import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { useSelector } from "react-redux";
-import ProjectsScrolls from "../ProjectsScrolls/ProjectsScrolls";
+import ProjectsList from "../ProjectsList/ProjectsList";
 import Background from "../Background/Background";
 import "./ProjectsCanvas.scss";
-
 
 function ProjectsCanvas() {
     const theme = useSelector((state) => state.darkTheme);
@@ -12,7 +11,7 @@ function ProjectsCanvas() {
     return (
         <Canvas className="canvas">
             <ambientLight intensity={theme ? 1.6 : 1.7} />
-            <ProjectsScrolls />
+            <ProjectsList theme={theme} />
             <Background theme={theme} />
         </Canvas>
     );
