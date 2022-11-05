@@ -2,26 +2,32 @@
 @use "../../styles/partials/_mixins.scss" as *;
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80vw;
-    height: 70vh;
-    z-index: 16695055;
-    outline: none;
-    border: 3px solid $primary-color;
-    box-shadow: 5px 4px;
-    backdrop-filter: blur(6px);
-    padding: 1rem;
+    backdrop-filter: blur(5px);
 
-    @include tablet {
-        padding: 2rem;
-    }
+    // &:hover {}
 
-    @include desktop {
-        width: 60vw;
+    &__box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80vw;
         height: 70vh;
+        z-index: 16695055;
+        outline: none;
+        border: 3px solid $primary-color;
+        box-shadow: 5px 4px;
+        backdrop-filter: blur(6px);
+        padding: 1rem;
+
+        @include tablet {
+            padding: 2rem;
+        }
+
+        @include desktop {
+            width: 60vw;
+            height: 70vh;
+        }
     }
 
     &__name {

@@ -7,16 +7,17 @@ import Modal from '@mui/material/Modal';
 import "./ProjectModal.scss";
 
 function ProjectModal({ open, handleClose, project, theme }) {
-
     return (
         <Modal
             open={open}
             onClose={handleClose}
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
+            className="modal"
+            BackdropProps={{ invisible: true }}
         >
-            <Box className="modal"
-                style={{ backgroundColor: theme ? "black" : "rgb(210, 229, 235, 0.75)" }}
+            <Box className="modal__box"
+                style={{ backgroundColor: theme ? "rgb(17, 17, 17)" : "rgb(240, 248, 255)" }}
             >
                 <div className="modal__title">
                     <h1 className="modal__name">{project.name}</h1>
