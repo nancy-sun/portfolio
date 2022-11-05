@@ -15,10 +15,12 @@ function ProjectItem({ project, theme }) {
             <ProjectModal handleClose={handleClose} open={open} project={project} theme={theme} />
             <div onClick={handleOpen} className="project">
                 <div className="project__img"></div>
-                <div className="project__title">
-                    {/* <p className="project__text">{project.title}</p> */}
-                    <p className="project__type">dolor sit adipisicing </p>
-                    <p className="project__name">Lorem ipsum dolor sit adipisicing </p>
+                <div className="project__text">
+                    <div className="project__title">
+                        <p className="project__name">{project.name}</p>
+                        <p className="project__type">{project.type}</p>
+                    </div>
+                    <p className="project__tech">{project.techstack}</p>
                 </div>
             </div>
         </>

@@ -12,9 +12,6 @@ function ProjectsList({ theme }) {
                 {projectsData.map((project) =>
                     <ProjectItem key={project.name} project={project} theme={theme} />
                 )}
-                {projectsData.map((project) =>
-                    <ProjectItem key={project.name} project={project} theme={theme} />
-                )}
             </div>
         </Html>
     );

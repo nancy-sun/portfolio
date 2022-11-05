@@ -1,32 +1,90 @@
 [
     {
         "name": "LiteChat",
+        "type": "Fullstack Web App",
         "description": "Fullstack CRUD project with responsive design and REST API. Providing quick group chats with real time voice communication in a browser chatroom.",
         "github": "https://github.com/nancy-sun/litechat",
+        "techstack": "React, Redux, Node, MongoDB, Socket.io, webRTC",
         "tech": "React, CSS(Sass), Bootstrap, Redux, Node.js, Express, MongoDB, Socket.io, webRTC, Figma"
     },
     {
         "name": "LCPLanner",
+        "type": "Fullstack Mobile App",
         "description": "Fullstack CRUD mobile app to help users plan and recap Leetcode problems progresses.",
         "github": "https://github.com/nancy-sun/lcplanner",
+        "techstack": "ReactNative, TS, Expo, Node, GraphQL, MongoDB",
         "tech": "React Native, Typescript, Expo, CSS(Sass), Node.js, GraphQL, JWT, MongoDB"
     },
     {
         "name": "Pinguine",
+        "type": "Fullstack Web App",
         "description": "Fullstack CRUD project with responsive design and REST API. Help users to easily save/bookmark locations and places on a map.",
         "github": "https://github.com/nancy-sun/pinguine",
+        "techstack": "React, Redux, MUI, Node, Express, MySQL, JWT",
         "tech": "React, CSS(Sass), Redux, MUI, Node.js, Express, MySQL, JWT"
     },
     {
         "name": "Portfolio",
+        "type": "Static Website",
         "description": "Responsive portfolio page implementing 3D in the browser.",
         "github": "https://github.com/nancy-sun/portfolio",
+        "techstack": "React, Three.js, Redux, MUI",
         "tech": "React, CSS(Sass), Three.js, Redux, MUI"
     },
     {
-        "name": "Hackathon project with Unbounce",
+        "name": "Unbounce-Hackathon",
+        "type": "Static Website",
         "description": "Winning team of 1 day Hackathon with the company Unbounce. Collaborate with UX designers to help Unbounce retain customer royalty.",
         "github": "https://github.com/nancy-sun/unbounce-project-client",
+        "techstack": "React, CSS(Sass), Bootstrap, Figma",
         "tech": "React, CSS(Sass), Bootstrap, Figma"
+    },
+    {
+        "name": "TIS-Hackathon",
+        "type": "Fullstack Web App",
+        "description": "",
+        "github": "https://github.com/nancy-sun/TIS",
+        "techstack": "React, Sass, Node, Express",
+        "tech": "React, Sass, Node, Express"
+    },
+    {
+        "name": "inStock",
+        "type": "Fullstack Web App",
+        "description": "",
+        "github": "https://github.com/nancy-sun/InStock",
+        "techstack": "React, Sass, Node, Express",
+        "tech": "React, Sass, Node, Express"
+    },
+    {
+        "name": "BrainFlix",
+        "type": "Fullstack Web App",
+        "description": "",
+        "github": "https://github.com/nancy-sun/brainflix",
+        "techstack": "React, Sass, Node, Express",
+        "tech": "React, Sass, Node, Express"
+    },
+    {
+        "name": "Bandsite",
+        "type": "Static Website",
+        "description": "",
+        "github": "https://github.com/nancy-sun/Bandsite",
+        "techstack": "HTML, Sass, JS",
+        "tech": "HTML, Sass, JS"
+    },
+    {
+        "name": "Travel Site",
+        "type": "Static Website",
+        "description": "",
+        "github": "https://github.com/nancy-sun/travel-site",
+        "techstack": "HTML, CSS, BEM",
+        "tech": "HTML, CSS, BEM"
+    },
+    {
+        "name": "Coffee Shop",
+        "type": "Static Website",
+        "description": "",
+        "github": "https://github.com/nancy-sun/coffee-shop",
+        "techstack": "HTML, CSS, BEM",
+        "tech": "HTML, CSS, BEM"
     }
 ]
