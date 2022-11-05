@@ -12,6 +12,7 @@
     width: 100%;
     font-size: 0.6rem;
     user-select: none;
+    opacity: 0.6;
 
     @include tablet {
         font-size: 0.8rem;
@@ -20,10 +21,14 @@
 
     &__text {
         color: inherit;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
 
         @include tablet {
-            font-size: 1.2rem;
+            font-size: 0.85rem;
+        }
+
+        @include desktop {
+            font-size: 0.98rem;
         }
     }
 
