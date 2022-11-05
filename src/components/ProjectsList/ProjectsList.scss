@@ -3,21 +3,21 @@
 
 .projects {
     &__list {
-        width: 80vw;
+        width: 81vw;
         display: grid;
         justify-content: center;
         row-gap: 4rem;
         grid-template-columns: repeat(1, 1fr);
 
         @include tablet {
-            width: 83vw;
+            width: 84vw;
             column-gap: 2.5rem;
             row-gap: 3.5rem;
             grid-template-columns: repeat(2, 1fr);
         }
 
         @include desktop {
-            width: 85vw;
+            width: 86vw;
             grid-template-columns: repeat(3, 1fr);
             column-gap: 3rem;
             row-gap: 4rem;

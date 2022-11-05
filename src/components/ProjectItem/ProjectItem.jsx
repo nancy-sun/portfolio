@@ -4,8 +4,9 @@ import ProjectModal from "../ProjectModal/ProjectModal";
 import "./ProjectItem.scss";
 
 function ProjectItem({ project, theme }) {
-    console.log(project)
     const [open, setOpen] = useState(false);
+
+    const imgSrc = require(`../../assets/projects/${project.pImage}`);
 
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -14,7 +15,9 @@ function ProjectItem({ project, theme }) {
         <>
             <ProjectModal handleClose={handleClose} open={open} project={project} theme={theme} />
             <div onClick={handleOpen} className="project">
-                <div className="project__img"></div>
+                <div className="project__img"
+                    style={{ backgroundImage: `url("${imgSrc}")` }}
+                ></div>
                 <div className="project__text">
                     <div className="project__title">
                         <p className="project__name">{project.name}</p>

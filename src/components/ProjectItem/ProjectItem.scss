@@ -2,11 +2,19 @@
 @use "../../styles/partials/_mixins.scss" as *;
 
 .project {
+    margin: 0 7px;
 
     &__img {
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.2);
         background-position: center;
         background-size: cover;
+        border-radius: 2px;
+        border: 3px solid #ffcad49a;
+
+        &:hover {
+            box-shadow: 8px 5px #ffcad4ba;
+            cursor: pointer;
+        }
 
         &:before {
             content: "";
