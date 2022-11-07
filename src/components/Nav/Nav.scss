@@ -42,11 +42,17 @@
 
     &__list {
         display: flex;
-        align-items: center;
+        align-items: baseline;
         gap: 0.7rem;
 
 
         @include tablet {
+            gap: 1rem;
+        }
+
+        &-wrap {
+            display: flex;
+            align-items: center;
             gap: 1rem;
         }
     }
@@ -59,12 +65,39 @@
             font-size: 1rem;
         }
 
+        @include desktop {
+            font-size: 1.3rem;
+        }
+
         &:hover {
             text-shadow: 1px 1px #e1a9b3;
+        }
+
+        &--active {
+            @extend .nav__item;
+            color: $primary-color;
+            font-weight: 800;
+            font-size: 0.7rem;
+
+            @include tablet {
+                font-size: 1.1rem;
+            }
+
+            &:hover {
+                text-shadow: none;
+            }
+
+            @include desktop {
+                font-size: 1.4rem;
+            }
         }
     }
 
     &__control {
         width: 2rem;
+
+        @include tablet {
+            width: 2.5rem;
+        }
     }
 }
