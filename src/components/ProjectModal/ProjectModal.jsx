@@ -10,6 +10,8 @@ function ProjectModal({ open, handleClose, project, theme }) {
 
     const imgSrc = (img) => require(`../../assets/projects/${img}`);
 
+    console.log(project.imgs)
+
     return (
         <Modal
             open={open}
@@ -38,8 +40,9 @@ function ProjectModal({ open, handleClose, project, theme }) {
                     <div className="modal__section">
                         <p className="modal__subtitle">Prototype:</p>
                         <div className="modal__imgs">
-                            <div className="modal__img" style={{ backgroundImage: `url("${imgSrc(project.pImage)}")` }} />
-                            <div className="modal__img" style={{ backgroundImage: `url("${imgSrc(project.pImage)}")` }} />
+                            {project.imgs.map((img, i) =>
+                                <img key={i} className="modal__img" src={`${imgSrc(img)}`} />
+                            )}
                         </div>
                     </div>
                 </div>

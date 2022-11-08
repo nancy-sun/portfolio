@@ -6,7 +6,10 @@
         "github": "https://github.com/nancy-sun/litechat",
         "techstack": "React, Redux, Node, MongoDB, Socket.io, webRTC",
         "tech": "React, CSS(Sass), Bootstrap, Redux, Node.js, Express, MongoDB, Socket.io, webRTC, Figma",
-        "pImage": "litechat-p.png"
+        "pImage": "litechat-p.png",
+        "imgs": [
+            "litechat1.png"
+        ]
     },
     {
         "name": "LCPLanner",
@@ -15,7 +18,8 @@
         "github": "https://github.com/nancy-sun/lcplanner",
         "techstack": "ReactNative, TS, Expo, Node, GraphQL, MongoDB",
         "tech": "React Native, Typescript, Expo, CSS(Sass), Node.js, GraphQL, JWT, MongoDB",
-        "pImage": "lcplanner-p.png"
+        "pImage": "lcplanner-p.png",
+        "imgs": []
     },
     {
         "name": "Pinguine",
@@ -24,7 +28,10 @@
         "github": "https://github.com/nancy-sun/pinguine",
         "techstack": "React, Redux, MUI, Node, Express, MySQL, JWT",
         "tech": "React, CSS(Sass), Redux, MUI, Node.js, Express, MySQL, JWT",
-        "pImage": "pinguine-p.png"
+        "pImage": "pinguine-p.png",
+        "imgs": [
+            "pinguine1.png"
+        ]
     },
     {
         "name": "Portfolio",
@@ -33,7 +40,10 @@
         "github": "https://github.com/nancy-sun/portfolio",
         "techstack": "React, Three.js, Redux, MUI",
         "tech": "React, CSS(Sass), Three.js, Redux, MUI",
-        "pImage": "portfolio-p.png"
+        "pImage": "portfolio-p.png",
+        "imgs": [
+            "portfolio1.png"
+        ]
     },
     {
         "name": "Unbounce-Hackathon",
@@ -42,7 +52,10 @@
         "github": "https://github.com/nancy-sun/unbounce-project-client",
         "techstack": "React, CSS(Sass), Bootstrap, Figma",
         "tech": "React, CSS(Sass), Bootstrap, Figma",
-        "pImage": "unbounce-p.png"
+        "pImage": "unbounce-p.png",
+        "imgs": [
+            "unbounce1.png"
+        ]
     },
     {
         "name": "TIS-Hackathon",
@@ -51,7 +64,8 @@
         "github": "https://github.com/nancy-sun/TIS",
         "techstack": "React, Sass, Node, Express",
         "tech": "React, Sass, Node, Express",
-        "pImage": "tis-p.png"
+        "pImage": "tis-p.png",
+        "imgs": []
     },
     {
         "name": "inStock",
@@ -60,7 +74,11 @@
         "github": "https://github.com/nancy-sun/InStock",
         "techstack": "React, Sass, Node, Express",
         "tech": "React, Sass, Node, Express",
-        "pImage": "instock-p.png"
+        "pImage": "instock-p.png",
+        "imgs": [
+            "instock1.png",
+            "instock2.png"
+        ]
     },
     {
         "name": "BrainFlix",
@@ -69,7 +87,8 @@
         "github": "https://github.com/nancy-sun/brainflix",
         "techstack": "React, Sass, Node, Express",
         "tech": "React, Sass, Node, Express",
-        "pImage": "brainflix-p.png"
+        "pImage": "brainflix-p.png",
+        "imgs": []
     },
     {
         "name": "Bandsite",
@@ -78,7 +97,8 @@
         "github": "https://github.com/nancy-sun/Bandsite",
         "techstack": "HTML, Sass, JS",
         "tech": "HTML, Sass, JS",
-        "pImage": "bandsite-p.png"
+        "pImage": "bandsite-p.png",
+        "imgs": []
     },
     {
         "name": "Travel Site",
@@ -87,7 +107,8 @@
         "github": "https://github.com/nancy-sun/travel-site",
         "techstack": "HTML, CSS, BEM",
         "tech": "HTML, CSS, BEM",
-        "pImage": "travelsite-p.png"
+        "pImage": "travelsite-p.png",
+        "imgs": []
     },
     {
         "name": "Coffee Shop",
@@ -96,6 +117,10 @@
         "github": "https://github.com/nancy-sun/coffee-shop",
         "techstack": "HTML, CSS, BEM",
         "tech": "HTML, CSS, BEM",
-        "pImage": "coffeeshop-p.png"
+        "pImage": "coffeeshop-p.png",
+        "imgs": [
+            "coffeeshop1.png",
+            "coffeeshop2.png"
+        ]
     }
 ]
