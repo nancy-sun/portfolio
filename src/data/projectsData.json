@@ -85,7 +85,7 @@
     {
         "name": "inStock",
         "type": "Fullstack Web App",
-        "description": "Fullstack CRUD group project with responsive design and REST API, that keep track of ware house inventories and warehouse info.",
+        "description": "Fullstack CRUD group project with responsive design and REST API, that keep track of warehouse inventories and warehouse info.",
         "github": "https://github.com/nancy-sun/InStock",
         "techstack": "React, Sass, Node, Express",
         "tech": "React, Sass, Node, Express",
