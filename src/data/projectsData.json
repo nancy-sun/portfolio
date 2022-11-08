@@ -2,7 +2,7 @@
     {
         "name": "LiteChat",
         "type": "Fullstack Web App",
-        "description": "Fullstack CRUD project with responsive design and REST API. Providing quick group chats with real time voice communication in a browser chatroom.",
+        "description": "Fullstack CRUD project with responsive design and REST API. Provide quick and anonymous group chats with real time voice communication in browser chatrooms. Integrated Socket.io and webRTC for minimized transmission latency through UDP connection. Implemented MongoDB to store and display temporary chatroom message histories.",
         "github": "https://github.com/nancy-sun/litechat",
         "techstack": "React, Redux, Node, MongoDB, Socket.io, webRTC",
         "tech": "React, CSS(Sass), Bootstrap, Redux, Node.js, Express, MongoDB, Socket.io, webRTC, Figma",
@@ -17,10 +17,10 @@
     {
         "name": "LCPLanner",
         "type": "Fullstack Mobile App",
-        "description": "Fullstack CRUD mobile app to help users plan and recap Leetcode problems progresses.",
+        "description": "Fullstack CRUD mobile app to help users plan and recap LeetCode problems progresses while enhancing peer learning experience. Users can plan and keep track of their daily coding problems accomplished while viewing their LeetCode progress data in charts. Meanwhile, users can add peers to view their progress, study plans as well as LeetCode submission data.",
         "github": "https://github.com/nancy-sun/lcplanner",
-        "techstack": "ReactNative, TS, Expo, Node, GraphQL, MongoDB",
-        "tech": "React Native, Typescript, Expo, CSS(Sass), Node.js, GraphQL, JWT, MongoDB",
+        "techstack": "ReactNative, TS, Expo, Node, GraphQL, MongoDB, AWS S3",
+        "tech": "React Native, Typescript, Expo, Node.js, GraphQL, JWT, MongoDB, AWS S3, AWS Cognito, React Native Chart Kit",
         "pImage": "lcplanner-p.png",
         "imgs": [
             "lcplanner1.png",
@@ -32,7 +32,7 @@
     {
         "name": "Pinguine",
         "type": "Fullstack Web App",
-        "description": "Fullstack CRUD project with responsive design and REST API. Help users to easily save/bookmark locations and places on a map.",
+        "description": "Fullstack CRUD project with responsive design and REST API. Help users to easily save/bookmark locations with descriptions and view it on a map.",
         "github": "https://github.com/nancy-sun/pinguine",
         "techstack": "React, Redux, MUI, Node, Express, MySQL, JWT",
         "tech": "React, CSS(Sass), Redux, MUI, Node.js, Express, MySQL, JWT",
@@ -45,7 +45,7 @@
     {
         "name": "Portfolio",
         "type": "Static Website",
-        "description": "Responsive portfolio page implementing 3D in the browser.",
+        "description": "Responsive portfolio site implementing 3D in the browser with Three.js.",
         "github": "https://github.com/nancy-sun/portfolio",
         "techstack": "React, Three.js, Redux, MUI",
         "tech": "React, CSS(Sass), Three.js, Redux, MUI",
@@ -60,7 +60,7 @@
     {
         "name": "Unbounce-Hackathon",
         "type": "Static Website",
-        "description": "Winning team of 1 day Hackathon with the company Unbounce. Collaborate with UX designers to help Unbounce retain customer royalty.",
+        "description": "Winning team of 1 day Hackathon with Unbounce. Collaborate with UX designers to come up with plans in helping Unbounce retain customer royalty. Created client site for ticket submission and support team dashboard for ticket management.",
         "github": "https://github.com/nancy-sun/unbounce-project-client",
         "techstack": "React, CSS(Sass), Bootstrap, Figma",
         "tech": "React, CSS(Sass), Bootstrap, Figma",
@@ -73,7 +73,7 @@
     {
         "name": "TIS-Hackathon",
         "type": "Fullstack Web App",
-        "description": "",
+        "description": "Fullstack Hackathon @ Brainstaion winning the first place, implementing React and Nodejs REST API. Allow users to randomly generate places to travel based on mood, providing users with destination descriptions and relevant travel packages from Expedia.",
         "github": "https://github.com/nancy-sun/TIS",
         "techstack": "React, Sass, Node, Express",
         "tech": "React, Sass, Node, Express",
@@ -85,7 +85,7 @@
     {
         "name": "inStock",
         "type": "Fullstack Web App",
-        "description": "",
+        "description": "Fullstack CRUD group project with responsive design and REST API, that keep track of ware house inventories and warehouse info.",
         "github": "https://github.com/nancy-sun/InStock",
         "techstack": "React, Sass, Node, Express",
         "tech": "React, Sass, Node, Express",
@@ -100,7 +100,7 @@
     {
         "name": "BrainFlix",
         "type": "Fullstack Web App",
-        "description": "",
+        "description": "Fullstack CRUD web app with responsive design and REST API that allow users to watch and upload videos, as well as responding to existing videos with comments and upvotes.",
         "github": "https://github.com/nancy-sun/brainflix",
         "techstack": "React, Sass, Node, Express",
         "tech": "React, Sass, Node, Express",
@@ -114,7 +114,7 @@
     {
         "name": "Bandsite",
         "type": "Web App",
-        "description": "",
+        "description": "Web app with responsive design for a band that allow users to view band info and post/delete/like comments about the band.",
         "github": "https://github.com/nancy-sun/Bandsite",
         "techstack": "HTML, Sass, JS",
         "tech": "HTML, Sass, JS, DOM",
@@ -128,7 +128,7 @@
     {
         "name": "Travel Site",
         "type": "Static Website",
-        "description": "",
+        "description": "Static website with responsive design for travel agency with travel plans.",
         "github": "https://github.com/nancy-sun/travel-site",
         "techstack": "HTML, CSS, BEM",
         "tech": "HTML, CSS, BEM",
@@ -141,7 +141,7 @@
     {
         "name": "Coffee Shop",
         "type": "Static Website",
-        "description": "",
+        "description": "Static website with responsive design for a coffee shop.",
         "github": "https://github.com/nancy-sun/coffee-shop",
         "techstack": "HTML, CSS, BEM",
         "tech": "HTML, CSS, BEM",
