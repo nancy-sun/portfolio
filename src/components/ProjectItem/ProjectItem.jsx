@@ -16,8 +16,7 @@ function ProjectItem({ project, theme }) {
             <ProjectModal handleClose={handleClose} open={open} project={project} theme={theme} />
             <div onClick={handleOpen} className="project">
                 <div className="project__img"
-                    style={{ backgroundImage: `url("${imgSrc}")` }}
-                ></div>
+                    style={{ backgroundImage: `url("${imgSrc}")` }} />
                 <div className="project__text">
                     <div className="project__title">
                         <p className="project__name">{project.name}</p>

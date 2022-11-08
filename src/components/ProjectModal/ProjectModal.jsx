@@ -7,6 +7,9 @@ import Modal from '@mui/material/Modal';
 import "./ProjectModal.scss";
 
 function ProjectModal({ open, handleClose, project, theme }) {
+
+    const imgSrc = (img) => require(`../../assets/projects/${img}`);
+
     return (
         <Modal
             open={open}
@@ -23,8 +26,23 @@ function ProjectModal({ open, handleClose, project, theme }) {
                     <h1 className="modal__name">{project.name}</h1>
                     <a href={project.github} target="_blank" rel="noreferrer" className="modal__github"> </a>
                 </div>
-                <p className="modal__description">{project.description}</p>
-                <p className="modal__tech">{project.tech}</p>
+                <div className="modal__content">
+                    <div className="modal__section">
+                        <p className="modal__subtitle">Description:</p>
+                        <p className="modal__description">{project.description}</p>
+                    </div>
+                    <div className="modal__section">
+                        <p className="modal__subtitle">Tech Stack:</p>
+                        <p className="modal__tech">{project.tech}</p>
+                    </div>
+                    <div className="modal__section">
+                        <p className="modal__subtitle">Prototype:</p>
+                        <div className="modal__imgs">
+                            <div className="modal__img" style={{ backgroundImage: `url("${imgSrc(project.pImage)}")` }} />
+                            <div className="modal__img" style={{ backgroundImage: `url("${imgSrc(project.pImage)}")` }} />
+                        </div>
+                    </div>
+                </div>
             </Box>
         </Modal>
     );
